@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="game.css">
+	</head>
+
+	<body id="body">
+		<img src="gwp.jpg" class="hatter">
+	
+		
+		<div class="maindiv"></div>
+
+		<section id="leiras">
+			<h1>SPACE INVADERS</h1>
+			<p>A játék célja, hogy teljesítsük az összes pályát.<br>Ezt az ellenséges űrhajók kiiktatásával érhetjük el.<br><br>Miután kiválasztottuk a hajót amivel játszani szeretnénk, ismételten rá kell majd kattintani a hajóra, hogy elinduljon a játék<br><br>A kiiktatásukért pont jár.<br><br>A játékosnak összesen három élete van.<br><br>Lövés: space<br><br>Mozgás: egér<br><br>Jó szórakozást!</p>
+		</section>
+
+		<img src="hajo1.png" class="hajo" id="hajo1" onclick="startgame()">
+		<img src="piranha.png" class="hajo" id="piranhaa" onclick="startgame()">
+
+		<button class="start button" id="start" onclick="start()">START</button>
+
+		<button class="tartarus" id="tartarus" onclick="megjelenit1()">Tartarus</button>
+		<img src="hajo1.png" id="valasztas1">
+		<button class="piranha" id="piranha" onclick="megjelenit2()">Piranha</button>
+		<img src="piranha.png" id="valasztas2">
+
+		
+		<div id="lovproba"></div>
+
+		<div id="enemyk1"></div>
+
+		<h2 id="masodikpalya">Második pálya</h2>
+		<h2 id="harmadikpalya">Harmadik pálya</h2>
+
+
+		<img src="gameover1.png" class="gameover">
+		<button class="reset" >Replay</button>
+	
+		<div class="gameoversection">
+		<p style="	color:white;font-size: 1.65vw;line-height: 50px;">pontok: <span class="pontok" ></span></p>
+		<p style="	color:white;font-size: 1.65vw;line-height: 50px;">teljesített pályák: <span class="teljesitett"></span></p>
+		</div>
+
+		<div class="felirat3" id="win">
+			<h2>NYERTÉL!</h2>
+			<p>pontok: <span class="pontok1" ></span></p>
+			<p>teljesített pályák: <span class="teljesitett1"></span></p>
+			<p>Szeretnéd újra kezdeni?</p>
+		</div>
+		<div class="felirat2"id="buttonok">
+			<button onclick="window.location.reload()">Yes</button>
+			<button onclick="window.close()">No</button>
+		</div>
+		
+	
+
+		<section id="lifebox">
+			<div id="life1"><img src="life.png" alt="elet"></div>
+			<div id="life2"><img src="life.png" alt="elet"></div>
+			<div id="life3"><img src="life.png" alt="elet"></div>		
+		</section>
+
+		<!-- ellensegek deklaralasa -->
+		<script type="text/javascript">
+			let enemyegy = "<img src='enemy1.png' class='spawn' style='position: absolute; width: 4%; padding-top:30px'>";
+
+			let elsoenemyclass=['urlenyke1kep','urlenyke1kep_2','urlenyke2kep','urlenyke2kep_2','urlenyke3kep','urlenyke3kep_2'];
+		</script>
+		<script type="text/javascript" src="JS.js"></script>
+	</body>
+</html>
